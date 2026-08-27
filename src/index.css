@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@utility scrollbar-hide {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  scrollbar-width: none;
+}
+@keyframes carousel {
+  0%, 30% {
+    transform: translateX(0);
+  }
+
+  33%, 63% {
+    transform: translateX(-100%);
+  }
+
+  66%, 96% {
+    transform: translateX(-200%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+animation: carousel 9s infinite;
